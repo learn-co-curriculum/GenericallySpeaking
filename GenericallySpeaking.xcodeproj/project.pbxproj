@@ -13,6 +13,9 @@
 		3120FE751A2CE54D00411EFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3120FE741A2CE54D00411EFA /* Images.xcassets */; };
 		3120FE781A2CE54D00411EFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3120FE761A2CE54D00411EFA /* LaunchScreen.xib */; };
 		3120FE841A2CE54D00411EFA /* GenericallySpeakingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120FE831A2CE54D00411EFA /* GenericallySpeakingTests.swift */; };
+		3120FE9E1A2DFB9300411EFA /* FISLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120FE9B1A2DFB9300411EFA /* FISLinkedList.swift */; };
+		3120FE9F1A2DFB9300411EFA /* FISNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120FE9C1A2DFB9300411EFA /* FISNode.swift */; };
+		3120FEA01A2DFB9300411EFA /* FISStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3120FE9D1A2DFB9300411EFA /* FISStudent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		3120FE7D1A2CE54D00411EFA /* GenericallySpeakingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericallySpeakingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120FE821A2CE54D00411EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3120FE831A2CE54D00411EFA /* GenericallySpeakingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericallySpeakingTests.swift; sourceTree = "<group>"; };
+		3120FE9B1A2DFB9300411EFA /* FISLinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FISLinkedList.swift; sourceTree = "<group>"; };
+		3120FE9C1A2DFB9300411EFA /* FISNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FISNode.swift; sourceTree = "<group>"; };
+		3120FE9D1A2DFB9300411EFA /* FISStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FISStudent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		3120FE6A1A2CE54D00411EFA /* GenericallySpeaking */ = {
 			isa = PBXGroup;
 			children = (
+				3120FE9B1A2DFB9300411EFA /* FISLinkedList.swift */,
+				3120FE9C1A2DFB9300411EFA /* FISNode.swift */,
+				3120FE9D1A2DFB9300411EFA /* FISStudent.swift */,
 				3120FE6D1A2CE54D00411EFA /* AppDelegate.swift */,
 				3120FE6F1A2CE54D00411EFA /* ViewController.swift */,
 				3120FE711A2CE54D00411EFA /* Main.storyboard */,
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3120FE9F1A2DFB9300411EFA /* FISNode.swift in Sources */,
+				3120FEA01A2DFB9300411EFA /* FISStudent.swift in Sources */,
 				3120FE701A2CE54D00411EFA /* ViewController.swift in Sources */,
+				3120FE9E1A2DFB9300411EFA /* FISLinkedList.swift in Sources */,
 				3120FE6E1A2CE54D00411EFA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

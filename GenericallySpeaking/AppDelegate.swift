@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        var linkedList = FISLinkedList<FISStudent>()
         
+        var student1 = FISStudent(name: "Tamar")
+        var student2 = FISStudent(name: "Jason")
+        //        linkedList.blake()
+        linkedList.addNodeAtIndex(0, key: student1)
+        linkedList.addNodeAtIndex(1, key: student2)
         
         // Override point for customization after application launch.
         return true
