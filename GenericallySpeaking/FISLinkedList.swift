@@ -18,29 +18,36 @@ class FISLinkedList<T: Equatable> {
             head.key = key
             return
         }
+        
+        if (index == 0) {
+            head.key = key
+        }
 
         var current : FISNode<T>? = head
         var endNode : FISNode<T>? = nil
         var listIndex : Int = 0
         
-        while currentG != nil {
+        while current != nil {
             
-            if (index == listIndex) {
-                var childToUse : FISNode = FISNode<T>()
+            var childToUse : FISNode = FISNode<T>()
+            
+            if index == listIndex {
+                
                 
                 childToUse.key = key
-                childToUse.link = current!.link
+                childToUse.link = current
                 current!.link = childToUse
-                break
+                current = current?.link
             }
             
-            listIndex + 1
+            listIndex += 1
         }
         
+        
     }
-    
+
 //    func addNode(key: T) {
-//        
+//
 //        if head.link == nil {
 //            head.key = key
 //            return
@@ -67,9 +74,5 @@ class FISLinkedList<T: Equatable> {
 //        
 //    }
 
-    
-    func deleteNodeAt(Index : Int, Key: T) {
-        
-    }
     
 }
