@@ -19,12 +19,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var linkedList = FISLinkedList<FISStudent>()
         
         var student1 = FISStudent(name: "Tamar")
-        var student2 = FISStudent(name: "Jason")
+        var student2 = FISStudent(name: "Zak")
+        var student3 = FISStudent(name: "Elliot")
+        
         //        linkedList.blake()
         linkedList.addNodeAtIndex(0, key: student1)
-        linkedList.addNodeAtIndex(1, key: student2)
+        linkedList.addNodeAtIndex(4, key: student2)
+        linkedList.addNodeAtIndex(1, key: student3)
+        linkedList.addNode(student3)
         
+        linkedList.deleteNodeAtIndex(1)
+        linkedList.deleteNodeAtIndex(5)
+        linkedList.deleteNode();
         // Override point for customization after application launch.
+        println(linkedList)
+        
+        var linkedList2 = FISLinkedList<FISStudent>()
+        linkedList2.deleteNodeAtIndex(5)
+        linkedList2.addNodeAtIndex(5, key: student1)
+        linkedList2.deleteNode()
+        linkedList2.addNode(student2)
         return true
     }
 
