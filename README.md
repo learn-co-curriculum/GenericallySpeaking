@@ -1,7 +1,4 @@
----
-tags: generics, computer science, linked lists
-language: swift
----
+
 
 #Generically Speaking
 
