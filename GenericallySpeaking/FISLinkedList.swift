@@ -28,7 +28,7 @@ class FISLinkedList<T: Equatable> {
         
         while current != nil {
             
-            var childToUse : FISNode = FISNode<T>()
+            let childToUse : FISNode = FISNode<T>()
             
             if index == listIndex {
                 
@@ -59,7 +59,7 @@ class FISLinkedList<T: Equatable> {
             
         }
         
-        var childToUse : FISNode = FISNode<T>()
+        let childToUse : FISNode = FISNode<T>()
 
         childToUse.key = key
         current!.link = childToUse
@@ -84,8 +84,8 @@ class FISLinkedList<T: Equatable> {
             
             if (index == listIndex + 1)
             {
-                var childToUse = current?.link
-                var childOfChild = childToUse?.link
+                let childToUse = current?.link
+                let childOfChild = childToUse?.link
                 current!.link = childOfChild
             }
             

@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        var linkedList = FISLinkedList<FISStudent>()
+        let linkedList = FISLinkedList<FISStudent>()
         
-        var student1 = FISStudent(name: "Tamar")
-        var student2 = FISStudent(name: "Zak")
-        var student3 = FISStudent(name: "Elliot")
+        let student1 = FISStudent(name: "Tamar")
+        let student2 = FISStudent(name: "Zak")
+        let student3 = FISStudent(name: "Elliot")
         
         //        linkedList.blake()
         linkedList.addNodeAtIndex(0, key: student1)
@@ -32,9 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         linkedList.deleteNodeAtIndex(5)
         linkedList.deleteNode();
         // Override point for customization after application launch.
-        println(linkedList)
+        print(linkedList)
         
-        var linkedList2 = FISLinkedList<FISStudent>()
+        let linkedList2 = FISLinkedList<FISStudent>()
         linkedList2.deleteNodeAtIndex(5)
         linkedList2.addNodeAtIndex(5, key: student1)
         linkedList2.deleteNode()
