@@ -20,5 +20,3 @@ Show that it works for an `FISStreetAddress` object list (with street number and
 You can't expect breakpoints to work in Swift the way you would normally, or for that matter `NSLog`/`println` or `po`. Therefore, it would be prudent to write tests for this lab with Quick / Nimble. Install them using the instructions on github [here](https://github.com/Quick/Quick).
 
 <a href='https://learn.co/lessons/GenericallySpeaking' data-visibility='hidden'>View this lesson on Learn.co</a>
-
-<a href='https://learn.co/lessons/GenericallySpeaking' data-visibility='hidden'>View this lesson on Learn.co</a>
